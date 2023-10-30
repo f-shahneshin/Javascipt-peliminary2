@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var userNumbers = [];
+        var userNumber = 0;
+        var sum = 0;
+
+        while (userNumber != -1) {
+            userNumber = Number(prompt('enter the number \n enter -1 if you dont enter any number'));
+            if (userNumber != -1) {
+                userNumbers.push(userNumber);
+            }
+        }
+        console.log(userNumbers);
+
+        for (let i = 0; i < userNumbers.length; i++) {
+            sum += userNumbers[i];
+        }
+        alert("your average is : \n " + sum / userNumbers.length);
+    </script>
+
+</body>
+
+</html>
